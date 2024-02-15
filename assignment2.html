@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AKenneallyAssignment2</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        font-family: Arial, sans-serif;
+    }
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -1;
+    }
+
+    .content {
+        position: absolute;
+        top: 30%;
+        text-align: center;
+        color: #fff;
+        width: 80%; 
+        max-width: 600px; 
+        padding: 0 20px; 
+        z-index: 1; 
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        z-index: 1; 
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0); 
+        padding: 2px; 
+        border-radius: 5px; 
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 60px;
+    }
+
+    .navbar li a {
+        display: block;
+    }
+
+    .navbar ol li {
+        display: inline;
+        margin-left: 20px;
+    }
+    
+    .navbar ol li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.0rem;
+    }
+ 
+   .navbar ol li a i {
+        color: rgb(249, 247, 247);
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbar {
+            top: 100px;
+            right: 100px;
+        }
+
+        .navbar ol li {
+            display: block;
+            margin-bottom: 50px;
+        }
+    }
+</style>
+</head>
+<body>
+    <a href="project.html">Go to Projects Page</a>
+    <video width="320" height="240" autoplay muted>
+        <source src="background.mp4" type="video/mp4">
+        <source src="background.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video> 
+    <div class="navbar">
+        <ol>
+            <li><a href="#"><i class="fa-regular fa-star"></i>About Me</a></li>
+            <li><a href="#"><i class="fa-regular fa-calendar-days"></i>Schedule</a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i>Contact</a></li>
+        </ol>
+    </div>
+
+    <div class="content">
+        <h1>Alicia Kenneally</h1>
+        <p>Assignement 1 for Web App Development</p>
+    </div>
+</body>
+</html>
